@@ -15,6 +15,9 @@
 		"type": "git",
 		"url": "git+https://github.com/bddjr/ccwfetch.git"
 	},
+	"publishConfig": {
+		"access": "public"
+	},
 	"scripts": {
 		"build": "tsc",
 		"prepublishOnly": "pnpm build"
