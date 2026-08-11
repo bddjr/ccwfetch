@@ -1,0 +1,29 @@
+{
+	"name": "@bddjr/ccwfetch",
+	"description": "Used for fetching the CCW API.",
+	"author": "bddjr",
+	"version": "0.0.1",
+	"license": "Unlicense",
+	"type": "module",
+	"main": "main.js",
+	"types": "main.d.ts",
+	"files": [
+		"main.js",
+		"main.d.ts"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/bddjr/ccwfetch.git"
+	},
+	"scripts": {
+		"build": "tsc",
+		"prepublishOnly": "pnpm build"
+	},
+	"dependencies": {
+		"tinyhmacmd5": "^0.0.7"
+	},
+	"devDependencies": {
+		"@bddjr/ccwfetch": "link:",
+		"typescript": "^7.0.2"
+	}
+}

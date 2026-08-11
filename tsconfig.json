@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "checkJs": true,
+        "allowJs": true,
+        "rootDir": ".",
+        "outDir": ".",
+        "declaration": true,
+        "emitDeclarationOnly": true,
+        "skipLibCheck": false
+    },
+    "include": [
+        "./main.js"
+    ],
+    "exclude": []
+}
