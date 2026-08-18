@@ -7,9 +7,11 @@
 	"type": "module",
 	"main": "main.js",
 	"types": "main.d.ts",
+	"browser": "browser.min.js",
 	"files": [
 		"main.js",
-		"main.d.ts"
+		"main.d.ts",
+		"browser.min.js"
 	],
 	"repository": {
 		"type": "git",
@@ -25,14 +27,16 @@
 		"gandi-ide"
 	],
 	"scripts": {
-		"build": "tsc",
-		"prepublishOnly": "pnpm build"
+		"build": "tsc && node scripts/build.js",
+    	"build:unchanged": "node scripts/build-unchanged.mjs",
+		"prepublishOnly": "pnpm build:unchanged"
 	},
 	"dependencies": {
 		"tinyhmacmd5": "^0.1.5"
 	},
 	"devDependencies": {
 		"@bddjr/ccwfetch": "link:",
+		"terser": "^5.50.0",
 		"typescript": "^7.0.2"
 	}
 }

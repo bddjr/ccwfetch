@@ -2,7 +2,7 @@
 
 用于请求 CCW API 。
 
-使用 POST 方法携带 body 请求 `community-web.ccw.site` 需要 A 和 B 请求头，该项目解决了这个问题。
+使用 POST 方法携带 body 请求 `community-web.ccw.site` 的部分接口需要 A 和 B 请求头，否则可能会返回“网络错误”。
 
 搞定 A 和 B 请求头之后，可以在携带用户 Cookie 或 Token 的环境里，以用户的身份向 CCW 发起任意网络请求。
 
@@ -10,7 +10,9 @@
 
 感谢 [@jexjws](https://github.com/jexjws) 使用 Gemini AI 找到重要线索，帮助作者破解请求头签名。
 
-## 开始
+## 安装
+
+### npm
 
 ```
 npm i @bddjr/ccwfetch
@@ -18,7 +20,33 @@ npm i @bddjr/ccwfetch
 
 ```js
 import CCWFetch from "@bddjr/ccwfetch";
+```
 
+### 其它包管理器
+
+你也可以使用其它包管理器（例如 `pnpm` 或 `yarn`）代替 `npm` 。
+
+### jsDelivr
+
+详见 https://www.jsdelivr.com/package/npm/@bddjr/ccwfetch
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/@bddjr/ccwfetch"></script>
+```
+
+它将使用 `var` 定义 `md5` 函数，然后定义 `class CCWFetch` 。
+
+### 嵌入
+
+你可以将 [`browser.min.js`](browser.min.js) 直接嵌入到你的脚本。
+
+它将使用 `var` 定义 `md5` 函数，然后定义 `class CCWFetch` 。
+
+---
+
+## 使用
+
+```js
 const ccwfetch = new CCWFetch()
 
 // 【可选】强制使用指定token

@@ -24,4 +24,4 @@ jobs:
           version: "11"
 
       - run: pnpm i
-      - run: pnpm build
+      - run: pnpm build:unchanged

@@ -121,8 +121,9 @@ class CCWFetch {
             init.credentials ??= "include"
             if (navigator.userAgent.includes("gandi-desktop")) try {
                 // gandi desktop
+                /** @type {{ token?: string, userId?: string }} */
                 //@ts-ignore
-                const { token, userId } = electron.ipcRenderer.sendSync("auth:get-token");
+                const { token } = electron.ipcRenderer.sendSync("auth:get-token");
                 if (token)
                     init.headers.set("token", token);
             } catch (e) {
