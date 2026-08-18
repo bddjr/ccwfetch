@@ -2,7 +2,7 @@
 	"name": "@bddjr/ccwfetch",
 	"description": "Used for fetching the CCW API.",
 	"author": "bddjr",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"license": "Unlicense",
 	"type": "module",
 	"main": "main.js",
@@ -18,12 +18,18 @@
 	"publishConfig": {
 		"access": "public"
 	},
+	"keywords": [
+		"ccw",
+		"cocreaworld",
+		"gandi",
+		"gandi-ide"
+	],
 	"scripts": {
 		"build": "tsc",
 		"prepublishOnly": "pnpm build"
 	},
 	"dependencies": {
-		"tinyhmacmd5": "^0.0.7"
+		"tinyhmacmd5": "^0.1.5"
 	},
 	"devDependencies": {
 		"@bddjr/ccwfetch": "link:",

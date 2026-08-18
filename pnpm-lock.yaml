@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       tinyhmacmd5:
-        specifier: ^0.0.7
-        version: 0.0.7
+        specifier: ^0.1.5
+        version: 0.1.5
     devDependencies:
       '@bddjr/ccwfetch':
         specifier: 'link:'
@@ -141,8 +141,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  tinyhmacmd5@0.0.7:
-    resolution: {integrity: sha512-Ih+cZh6YMN72hkxVhSokCu8zyVDGVEYTbQ8bR3fReO8kP/mFW2k0gtduK4mf/nZjatPgkaTEbvaCCIe1N9Qw7g==}
+  tinyhmacmd5@0.1.5:
+    resolution: {integrity: sha512-tMCWKGh3XD5srUAciR02ia9y47crFICq5C3mLkaX/VdBnC+7OH5HyeTidpeoZ53OEAq51ja/vG3hjKY2cywozg==}
 
   typescript@7.0.2:
     resolution: {integrity: sha512-8FYau96o3NKOhbjKi/qNvG/W5jhzxkbdm5sj9AbZ/5T5sWqn3hJgLfGx27sRKZWTvyzCP8dLRBTf5tBTSRVUNA==}
@@ -211,7 +211,7 @@ snapshots:
   '@typescript/typescript-win32-x64@7.0.2':
     optional: true
 
-  tinyhmacmd5@0.0.7: {}
+  tinyhmacmd5@0.1.5: {}
 
   typescript@7.0.2:
     optionalDependencies:

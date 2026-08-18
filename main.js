@@ -86,7 +86,7 @@ class CCWFetch {
          * }[]}
          */
         const body = result.body
-        this._hmacKey = body.reduce((p, v) => v.traceId[parseInt(v.traceId[0], 16) + 1] + p, '')
+        this._hmacKey = body.reduce((p, { traceId: v }) => v[parseInt(v[0], 16) + 1] + p, "")
     }
 
     /**
