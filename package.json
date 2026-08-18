@@ -2,7 +2,7 @@
 	"name": "@bddjr/ccwfetch",
 	"description": "Used for fetching the CCW API.",
 	"author": "bddjr",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"license": "Unlicense",
 	"type": "module",
 	"main": "main.js",
@@ -28,11 +28,11 @@
 	],
 	"scripts": {
 		"build": "tsc && node scripts/build.js",
-    	"build:unchanged": "node scripts/build-unchanged.mjs",
+		"build:unchanged": "node scripts/build-unchanged.mjs",
 		"prepublishOnly": "pnpm build:unchanged"
 	},
 	"dependencies": {
-		"tinyhmacmd5": "^0.1.5"
+		"tinyhmacmd5": "^0.1.6"
 	},
 	"devDependencies": {
 		"@bddjr/ccwfetch": "link:",

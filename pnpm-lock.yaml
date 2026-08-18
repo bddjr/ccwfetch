@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       tinyhmacmd5:
-        specifier: ^0.1.5
-        version: 0.1.5
+        specifier: ^0.1.6
+        version: 0.1.6
     devDependencies:
       '@bddjr/ccwfetch':
         specifier: 'link:'
@@ -183,8 +183,8 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
 
-  tinyhmacmd5@0.1.5:
-    resolution: {integrity: sha512-tMCWKGh3XD5srUAciR02ia9y47crFICq5C3mLkaX/VdBnC+7OH5HyeTidpeoZ53OEAq51ja/vG3hjKY2cywozg==}
+  tinyhmacmd5@0.1.6:
+    resolution: {integrity: sha512-sKUFiAeMUd2gUgnJsupBrNRJmW/ISTynTVyDs0lNG72ENSXP/kA7zdfh+7BK3aK/dH2IGBWGYy2SD97l+czaTQ==}
 
   typescript@7.0.2:
     resolution: {integrity: sha512-8FYau96o3NKOhbjKi/qNvG/W5jhzxkbdm5sj9AbZ/5T5sWqn3hJgLfGx27sRKZWTvyzCP8dLRBTf5tBTSRVUNA==}
@@ -292,7 +292,7 @@ snapshots:
       commander: 2.20.3
       source-map-support: 0.5.21
 
-  tinyhmacmd5@0.1.5: {}
+  tinyhmacmd5@0.1.6: {}
 
   typescript@7.0.2:
     optionalDependencies:
